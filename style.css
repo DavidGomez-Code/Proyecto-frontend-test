@@ -4,8 +4,68 @@
     box-sizing: border-box;
 }
 
+/* Estilos generales */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+  ::-webkit-scrollbar-thumb {
+    background: #037bc0;
+    border-radius: 9px;
+}
+  ::-webkit-scrollbar-track {
+      border-radius: 15px;
+}
+
+
 body {
     font-family: sans-serif;
     background-color: #ffffff;
     font-size: 0.938rem;
+}
+
+.container {
+    background: #fff;
+    outline: 2px solid #000;
+    width: 850px;
+    max-width: 850px;
+    height: 600px;
+    max-height: 700px;
+    border-radius: 10px;
+    margin: 70px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 10px;
+    justify-content: space-evenly;
+    align-content: center;
+    /* min-height: 100vh; */
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+}
+
+.container .primer-container {
+    background: lightblue;
+    border: 2px solid #09f;
+    border-radius: 6px;
+}
+
+.container .segundo-container {
+    background: lightblue;
+    border: 2px solid #09f;
+    border-radius: 6px;
+}
+
+.container .tercer-container {
+    background: lightblue;
+    border: 2px solid #09f;
+    border-radius: 6px;
+}
+
+.container .cuarto-container {
+    background: lightblue;
+    border: 2px solid #09f;
+    border-radius: 6px;
 }
