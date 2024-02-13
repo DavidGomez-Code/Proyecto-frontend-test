@@ -19,8 +19,16 @@
 
 
 body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: #ffffff;
+    background-image: url(./assets/Big\ Kitty\ Illustration\ -\ Catstyle.jpeg);
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #f3f3f3;
     font-size: 1.2rem;
 }
 
@@ -32,12 +40,13 @@ body {
     max-width: 50rem;
     height: 36.75rem;
     max-height: 36.875rem;
-    margin: 1.875rem auto;
+    margin: auto !important;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 25rem 6.875rem;
     column-gap: 2.5rem;
     row-gap: 0.938rem;
+    border-radius: 22px;
     /* gap: 20px; */
     /* justify-content: space-evenly;
     align-content: center;
@@ -47,11 +56,11 @@ body {
     align-items: center;
     justify-content: center; */
 }
-
+/* 
 .git {
     padding-left: 0.625rem;
 }
-
+ */
 .primer-container {
     padding: 6.25rem 0 0 1.25rem;
     /* border: 2px solid #09f; */
@@ -62,9 +71,20 @@ body {
     font-weight: 700;
 }
 
+.negrita {
+    font-weight: 600;
+}
+
+.color-test-80{
+    color: rgba(0, 0, 0, 0.8);
+}
+.color-test-60{
+    color: rgba(0, 0, 0, 0.6);
+}
+
+
 .negrita,
 .paragrah {
-    font-weight: 600;
     font-size: 2.5rem;
 }
 
@@ -76,7 +96,6 @@ body {
     padding: 70px 0 0 7px;
     font-weight: 600;
     font-size: 25px;
-    color: #a8a39d;
 }
 
 .dev{
@@ -93,7 +112,6 @@ body {
 .estilos li {
     padding: 0 0 0 0.625rem;
     font-weight: 700;
-    color: #a8a39d;
 }
 
 .segundo-container {
@@ -119,6 +137,9 @@ body {
     border-radius: 6px; */
     /* grid-column: 1/-1; */
 }
+.tercer-container img {
+    opacity: 0.6 !important;
+}
 
 .cuarto-container {
     display: block;
@@ -139,5 +160,18 @@ body {
         grid-template-rows: 25rem 6.875rem;
         column-gap: 2.5rem;
         row-gap: 0.938rem;
+    }
+}
+@media (width < 970px) {
+    .segundo-container .fondo {
+   
+        width: 80% !important;
+    }
+}
+@media (height < 605px) {
+    body {
+        display: block;
+        justify-content: center;
+        align-items: start;
     }
 }
